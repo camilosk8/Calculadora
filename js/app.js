@@ -3,39 +3,48 @@ window.onload=manejarClics;
 var cifra1="";
 
 function manejarClics() {
-
-	var mas =document.getElementById("mas");
+	
+    var mas =document.getElementById("mas");
 	mas.addEventListener("click",function() {
 								operacion("+");
 								});
+
 	var menos=document.getElementById("menos");
 	menos.addEventListener("click",function() {
 								operacion("-");
 								});
+
 	var por=document.getElementById("por");
 	por.addEventListener("click",function() {
 								operacion("*");
 								});
+
 	var division=document.getElementById("dividido");
 	division.addEventListener("click",function() {
 								operacion("/");
 								});
+
+
 	var numero1=document.getElementById("1");
 	numero1.addEventListener("click",function() {
 								operacion("1");
 								});
+
 	var numero2=document.getElementById("2");
 	numero2.addEventListener("click",function() {
 								operacion("2");
 								});
+
 	var numero3=document.getElementById("3");
 	numero3.addEventListener("click",function() {
 								operacion("3");
 								});
+						
 	var numero4=document.getElementById("4");
 	numero4.addEventListener("click",function() {
 								operacion("4");
 								});
+
 	var numero5=document.getElementById("5");
 	numero5.addEventListener("click",function() {
 								operacion("5");
@@ -45,6 +54,7 @@ function manejarClics() {
 	numero6.addEventListener("click",function() {
 								operacion("6");
 								});
+
 	var numero7=document.getElementById("7");
 	numero7.addEventListener("click",function() {
 								operacion("7");
@@ -73,19 +83,20 @@ function manejarClics() {
 	punto.addEventListener("click",function() {
 								operacion(".");
 								});
+
+
 	var elimina=document.getElementById("on");
 	elimina.addEventListener("click",eliminar);
+
 }
 
-
-function display(){
-	var display = document.getElementById("display");
-}
-
+ 
 function operacion(num){
+
 		cifra1+=num;
         var pan=document.getElementById("display");
-		pan.innerHTML=cifra1;
+		pan.innerHTML=cifra1;	
+		
 }
 
 function calcular()	{
@@ -101,3 +112,4 @@ function eliminar(){
 	var pan=document.getElementById("display");
 	pan.innerHTML=0;
 }
+
